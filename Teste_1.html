@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 <title>" meu teste para baixar conteudo de uma Url</title>
 
@@ -7,13 +6,17 @@
 
 <script>  const http = new XMLHttpRequest()
 
-    http.open("GET", "http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/")
+    http.open("GET", "https://api.lyrics.ovh/v1/shakira/waka-waka")
     http.send()
 
     http.onload = () => console.log(http.responseText)
 
 </script>
 
+<!-- NÃO FUNCIOU COM O SITE DA LOTOFACIL  >>>>>>>    RETORNOU COMO SEM PERMISSAO DE ASCESSO-->
+<!-- NÃO FUNCIONOU TAMBÉM COM O SITE DO VUEJS >>>>>>> RETORNOU COMO SEM PERMISSAO DE ASCESSO-->
+
+<!-- MAS FUNCIONOU COM O EXEMPLO ACIMA  ????????NÃO SEI O MOTIVO ???    -->
 
 
 
