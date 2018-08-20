@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>" meu teste para baixar conteudo de uma Url</title>
+
+<body>
+
+<script>  const http = new XMLHttpRequest()
+
+    http.open("GET", "http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/")
+    http.send()
+
+    http.onload = () => console.log(http.responseText)
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+</html>
