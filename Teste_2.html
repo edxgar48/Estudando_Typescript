@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang= "en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+
+<title>'meu teste para ABRIR conteudo de um arquivo .HTM' </title>
+
+<body>
+
+
+<script>
+ const input = document.querySelector('input[type="file"]')
+    input.addEventListener('change',function (e) {
+         console.log(input.files)
+         const reader = new FileReader()
+         reader.onload = function () {
+             const lines = reader.result.split(' /n').map(function(line) {
+                 return line.split(',')
+             })
+             console.log(lines)
+         }
+     
+        reader.readAsText(input.files[0])
+        },false)
+
+
+</script>
+
+
+
+</body>
+</head>
+</html>
