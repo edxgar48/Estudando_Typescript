@@ -31,8 +31,8 @@
 <script>
 
 function readSingleFile(e) {
-  var file = e.target.files[0];
-  if (!file) {
+  var arquivo = e.target.files[0];
+  if (!arquivo) {
     return;
   }
   var reader = new FileReader();
@@ -40,7 +40,7 @@ function readSingleFile(e) {
     var contents = e.target.result;
     displayContents(contents);
   };
-  reader.readAsText(file);
+  reader.readAsText(blob);
 }
 
 function displayContents(contents) {
@@ -48,11 +48,10 @@ function displayContents(contents) {
   element.textContent = contents;
 }
 
-document.getElementById('file-input')
-  .addEventListener('change', readSingleFile, false);
+document.getElementById('file-input').addEventListener('change', readSingleFile, false);
 </script>
 
-<input type="file" id="file-input" />
+<input type="blob" id="file-input" />
 <h3>Conteudo do arquivo :</h3>
 <pre id="file-content"></pre>
 
