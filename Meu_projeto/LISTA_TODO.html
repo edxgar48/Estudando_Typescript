@@ -71,6 +71,12 @@ ESTÁ AGORA ESTÁ MAIS CURTA E TAMBÉM MUDEI OS VALORES PARA MULTILINE \GLOBAL  
   /  (>\d+<)|(\>\d+\/\d+\/\d+\<)  /gm   >>>>>>>>>>> essa pega a data e pula linhas com virgulas ex. 0,00 >>>>
   ideia legal !!! para salvar no arquivo e depois ajustar para o banco de dados
 
+
+  DEFIFITIVAMENTE VOU USAR ESTÁ EXPRESSAO REGULAR (\td .*) por conter tudo oque preciso e depois salvar as informacoes em um novo arquivo que depois tambem transformarei 
+  com uma nova REGEX - (a cada 31 linhas corresponde a um novo concurso neste caso, o legal desta regex é que ela não pula linhas nem nada e captura exatamente oque preciso)
+  o proximo passo é salvar essa REGEX em um único arquivo, para depois fazer a captura para um banco de dados apenas com oque peciso
+
+
 __________________________________________________________________________________________________
 GOSTEI DESTE VIDEO TAMBEM PARA EXTRAIR UMA TABELA DE UM ARQUIVO HTML
 
