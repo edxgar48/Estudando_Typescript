@@ -1,4 +1,4 @@
-import { createWriteStream } from 'fs';
+import { createWriteStream } from 'fs'; //AQUI FUNCIONA MELHOR O ECMA6 JÁ no Teste_4_Fun.js nao funcionou 
 const fs = require('fs')
 
 const writetable = createWriteStream('meu_aRQUIVO.TXT',{flag:'w',encoding:'utf8'})
