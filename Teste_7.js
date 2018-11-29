@@ -16,7 +16,7 @@ var rl = readline.createInterface({
   terminal: false
 })
 rl.on('line',function(line){
-
+  
 
   //console.log(line) // aqui podes fazer o que precisas com cada linha
 
@@ -28,3 +28,14 @@ rl.on('line',function(line){
 
 //  FUNCIONOU  FINALMENTE HHEEEE!!!!!!  >>>>>>>>>> AGORA É PRECISO SALVAR EM UM ARQUIVO TEXTO, APENAS O RESULTADO DA SAIDA...
 // OQUE FOR null NAO DEVE SER GRAVADO 
+// VOU TENTEI ISTO MAS NAO DEU CERTO >>>>>>
+//var fs = require('fs');
+
+//fs.writeFile("C:\\Pasta\\meuarquivo.txt", "Hello, txt!", function(erro) {
+
+//  if(erro) {
+//      throw erro;
+//  }
+
+//  console.log("Arquivo salvo");
+//});
