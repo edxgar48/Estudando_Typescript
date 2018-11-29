@@ -1,5 +1,11 @@
 const readline = require('readline');
 const fs = require('fs');
+const reg = /(\<td .*)/g;
+const casado = ` `;
+
+
+
+
 const rl = readline.createInterface({
 
     input: fs.createReadStream(`D_LOTFAC.HTM`)
@@ -7,12 +13,12 @@ const rl = readline.createInterface({
 
 });
 
-rl.on(`line`,(line) => {
+    rl.on(`line`,line => {
     console.log('Line from file:',line);
 
 
 });
-rl.on(`close`, () => {
+    rl.on(`close`, () => {
     console.log(`acabou`);
     
 });
