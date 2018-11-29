@@ -1,4 +1,4 @@
-const s = ` `;
+//const s = ` `;
 const dirfile = 'D_LOTFAC.HTM';
 const flagfile = 'r+';
 const reg = /(\<td .*)/g;
