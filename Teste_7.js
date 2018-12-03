@@ -11,7 +11,7 @@ const fs = require('fs');
 /// ISSO FUNCIONA AGORA PRECISO ITERAR DENTRO DO ARQUIVO d_LOTOFAC.HTM USANDO UM LAÇO FOR
 
 const rl = readline.createInterface({
-  input : fs.createReadStream(dirfile),
+  input : fs.createReadStream(dirfile,'utf8'),
   output: process.stdout,
   terminal: false
 })
@@ -19,7 +19,7 @@ rl.on('line',function(line){
   
 
   
-  console.log(line.match(reg))     //console.log(line) // aqui podes fazer o que precisas com cada linha
+  console.log(line.match(reg));     //console.log(line) // aqui podes fazer o que precisas com cada linha
 
 })
 
