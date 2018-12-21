@@ -20,4 +20,5 @@ const leitura = fs.readFile(dirfile,`utf8`);
 
 /// E ISTO TAMBÉM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
 /// E ISTO TAMBÉM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   https://www.youtube.com/watch?v=H0Tb_cMzbAs
- 
+/// E ISTO TAMÉM >>>>>>>>>>>>>>>>>>>>>>>>>>>>.>>>>>>>     https://www.youtube.com/watch?v=X_DkgGQXJO8
+

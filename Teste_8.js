@@ -22,3 +22,4 @@ myReadStream.on('data',(chunk_pedaco)=>{
    //myWriteStream.write(console.log(sequencia)));// ISSO NÃO FUNCIONA
 })
 
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push
