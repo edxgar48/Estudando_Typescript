@@ -9,7 +9,7 @@ const fs = require('fs');
 /// ISSO FUNCIONA AGORA PRECISO ITERAR DENTRO DO ARQUIVO d_LOTOFAC.HTM USANDO UM LAÇO FOR
 
 const myReadStream =fs.createReadStream(dirfile,'utf8');
-//const myWriteStream =fs.createWriteStream(__dirname +'/Ajeitado.Txt');//ISSO FUNCIONA
+// myWriteStream =fs.createWriteStream(__dirfile+'utf8');//ISSO FUNCIONA
 
 
 

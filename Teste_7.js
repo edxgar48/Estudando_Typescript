@@ -1,7 +1,7 @@
 //const s = ` `;
 const dirfile = 'D_LOTFAC.HTM';
 // const flagfile = 'r+'; // NÃO ESTAVA USANDO ISSO
-const reg = /(\<td .*)/g;
+const reg = /(\<td .*)/g; // MINHA REGEX
 const readline = require('readline');
 const fs = require('fs');
 
