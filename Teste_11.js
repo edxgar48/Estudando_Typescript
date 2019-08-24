@@ -1,6 +1,7 @@
-const dirfile = 'd_lotfac.HTM'
+const dirfile = 'd_lotfac.htm'
 const dirfile_other = 'BIG_DATA_OTHER.html'
-const reg = /(\<td .*)/g
+const reg = /<td rowspan="\d.*">\d.*/g
+//const reg = /(\<td .*)/g
 const fs = require('fs')
 
 const stream = fs.createWriteStream(dirfile_other,'utf8');
