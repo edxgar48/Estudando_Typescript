@@ -11,7 +11,7 @@ const myReadStream =fs.createReadStream(dirfile,'utf8')
 
 myReadStream.on('data',(chunk_)=>{
 
-    var myReturn = chunk_.match(reg)
+    let myReturn = chunk_.match(reg)
 
     myReturn.forEach((trechoEncontrado)=> { stream.write(trechoEncontrado + '\n'); });
     
