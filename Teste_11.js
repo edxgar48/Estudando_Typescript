@@ -1,6 +1,7 @@
 const dirfile = 'd_lotfac.htm'
 const dirfile_other = 'BIG_DATA_OTHER.html'
 const reg = /<td rowspan="\d.*">\d.*/g   // essa REGEX é MUUUITO  MELHOR
+
 //const reg = /(\<td .*)/g  // essa NÂO serviu proque tem algumas linhas dentro do <td> que estão mal formatadas no original
 const fs = require('fs')
 
@@ -14,5 +15,4 @@ myReadStream.on('data',(chunk_)=>{
 
     myReturn.forEach((trechoEncontrado)=> { stream.write(trechoEncontrado + '\n'); });
     
-}) 
- 
+})
