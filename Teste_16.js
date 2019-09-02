@@ -22,9 +22,31 @@ fs.readFile(dirfile_1, 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }
+
+  for (let i=0;i<16;i++) {
+
+    if (i < 16){
+      console.log(data)
+      if (i>=30) {
+        data.unshift()
+      }
+    } 
+
+
+
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  
   //let result = data.replace(reg_2,'');
 
-  fs.writeFile(dirfile_2, result, 'utf8', function (err) {
-     if (err) return console.log(err);
-  });
+ // fs.writeFile(dirfile_2, data, 'utf8', function (err) {
+   //  if (err) return console.log(err);
+ // });
 });
