@@ -18,24 +18,71 @@ const dirfile_1 = 'BIG_DATA.csv'
 //})
 
 
-fs.readFile(dirfile_1, 'utf8', function (err,data) {
+const leitura = fs.readFile(dirfile_1, 'utf8', function (err, data) {
   if (err) {
     return console.log(err);
   }
+})
 
-  for (let i=0;i<16;i++) {
+ // var x = 0
+  var i = 0
+  //var j = [x]
 
-    if (i < 16){
-      console.log(data)
-      if (i>=30) {
-        data.unshift()
-      }
-    } 
-
-
+  for (i = 0; i.length(); i++) {
+    if (i >= 16) {
+      leitura.unshift(i)
+      console.log(i)
+    }
 
 
   }
+
+
+// leitura.on('data',(resultado)=>{
+  
+//   let j = 0
+//   for (let i =[j];i.length();j++){
+//       if (j>=16){
+//         leitura.unshift(resultado)
+//       } 
+
+//   }
+
+    
+//   });
+// console.log(leitura) 
+  //   //var retorno = 0
+//     for (retorno in leitura)
+//       if (retorno >= 16) {
+//         retorno.unshift(resultado)
+//         //console.log(resultado)
+//       }
+// console.log(resultado)
+
+//console.log(resultado)
+
+
+
+
+
+// fs.readFile(dirfile_1, 'utf8', function (err,data) {
+//   if (err) {
+//     return console.log(err);
+//   }
+
+//   for (let i=0;i<16;i++) {
+
+//     if (i < 16){
+//       console.log(data)
+//       if (i>=30) {
+//         data.unshift()
+//       }
+//     } 
+
+
+
+
+//   }
   
   
   
@@ -49,4 +96,4 @@ fs.readFile(dirfile_1, 'utf8', function (err,data) {
  // fs.writeFile(dirfile_2, data, 'utf8', function (err) {
    //  if (err) return console.log(err);
  // });
-});
+// });

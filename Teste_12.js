@@ -6,7 +6,7 @@ const reg_2 = /(\<td rowspan="\d.*"\>)|(<\/td>)/g
 const fs = require('fs')
 //const replace = require('replace-in-file');
 
-const dirfile_2 = 'BIG_DATA.html'
+const dirfile_2 = 'BIG_DATA.csv'
 //const stream_2 = fs.createWriteStream(dirfile_2,'utf8')
 //const myreadStream = fs.createReadStream(dirfile_other,'utf8')
 
