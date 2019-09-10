@@ -17,6 +17,9 @@ const dirfile_2 = 'BIG_DATA.csv'
     //  myReturn.forEach((trechoEncontrado_2)=> { stream_2.write(trechoEncontrado_2 + '\n'); });
 //})
 
+// ------>>>>> essa REGEX (\d.*\,\d{2}) acho que vou ter que casar isso para mais um ajuste no arquivo e fazer mais um replace, mas desta vez colocando uma marca ou uma quebra de linha
+//
+// ------>>>>> ela casa tudo que estiver com digitos e virgulas, então para fazer um ajuste mais preciso vou ter que incluir uma quebra de linha ou um caracter especial
 
 fs.readFile(dirfile_other, 'utf8', function (err,data) {
   if (err) {
