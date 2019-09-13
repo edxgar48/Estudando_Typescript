@@ -23,10 +23,10 @@ fs.readFile(dirfile_2, 'utf8', function (err, data) {
     return console.log(err);
   }
   let result = data.split(reg_3);
-  
-  for ( let i = 0;i<=14;i++) {
+
+  for (let i = 0; i <= 14; i++) {
     console.log(result.unshift(i))
-    
+
 
   }
   //i = 0
@@ -35,7 +35,7 @@ fs.readFile(dirfile_2, 'utf8', function (err, data) {
 
   //console.log(result) // ------>>>>>> FUNCIONA  LÊ TUDO COMO UM UNICO ARRAY
   
-  // if (result === "+") {
+  // if (result === "+") {S
   //   for (let i = 0; result.length(i) <= 14; i++) {
   //     result.unshift(i)
   //     i = [0]
