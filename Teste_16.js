@@ -18,17 +18,36 @@ const dirfile_1 = 'BIG_DATA.csv'
 // ----->>>>>  exemplo do site :   https://stackoverflow.com/questions/23331546/how-to-use-javascript-to-read-local-text-file-and-read-line-by-line
 //
 
-fs.readFile(dirfile_1, 'utf8', function (err,data) {
+fs.readFile(dirfile_2, 'utf8', function (err, data) {
   if (err) {
     return console.log(err);
   }
   let result = data.split(reg_3);
+  
+  for ( let i = 0;i<=14;i++) {
+    console.log(result.unshift(i))
+    
+
+  }
+  //i = 0
+  //console.log(result[0]) // ------->>>>>FUNCIONA LÊ O PRIMEIRO INDICE DO ARRAY (RETORNA 1, NO CASO)
+
+
   //console.log(result) // ------>>>>>> FUNCIONA  LÊ TUDO COMO UM UNICO ARRAY
-   
-  result.forEach(function(line, index, arr) {
-    if (index === arr.length - 1 && line === "") { return; }
-    console.log(index + " " + line);
-  });
+  
+  // if (result === "+") {
+  //   for (let i = 0; result.length(i) <= 14; i++) {
+  //     result.unshift(i)
+  //     i = [0]
+  //     console.log(result)
+  //   }
+  //   // //console.log(result)  
+  // } 
+
+  // result.forEach(function(line, index, arr) {
+  //   if (index === arr.length - 1 && line === " ") { return; }
+  //   console.log(index + " " + line);
+  // });
 
   // for (result>=16;result.length;result++) {
 
