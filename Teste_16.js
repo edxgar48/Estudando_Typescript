@@ -5,6 +5,7 @@ const dirfile_2 = 'BIG_DATA_2.csv'
 //const reg = /(\<td .*)/g  // essa NÂO serviu proque tem algumas linhas dentro do <td> que estão mal formatadas no original
 const fs = require('fs')
 //const replace = require('replace-in-file');
+const regex1 = "  "
 
 const dirfile_1 = 'BIG_DATA.csv'
 //const stream_2 = fs.createWriteStream(dirfile_2,'utf8')
@@ -17,25 +18,34 @@ const dirfile_1 = 'BIG_DATA.csv'
     //  myReturn.forEach((trechoEncontrado_2)=> { stream_2.write(trechoEncontrado_2 + '\n'); });
 //})
 
+const lendo = fs.createReadStream(dirfile_1,'utf8')
+lendo.on('data',(pegaga)=>{
 
-fs.readFile(dirfile_1, 'utf8', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
+  var retorno =pegapega.match(regex1)
+  retorno.forEach((elemento) => {
+    
+  });
 
-  for (let i=0;i<16;i++) {
+})
 
-    if (i < 16){
-      console.log(data)
-      if (i>=30) {
-        data.unshift()
-      }
-    } 
+// fs.readFile(dirfile_1, 'utf8', function (err,data) {
+//   if (err) {
+//     return console.log(err);
+//   }
+
+//   for (let i=0;i<16;i++) {
+
+//     if (i < 16){
+//       console.log(data)
+//       if (i>=30) {
+//         data.unshift()
+//       }
+//     } 
 
 
 
 
-  }
+//   }
   
   
   
@@ -44,9 +54,9 @@ fs.readFile(dirfile_1, 'utf8', function (err,data) {
   
   
   
-  //let result = data.replace(reg_2,'');
+//   //let result = data.replace(reg_2,'');
 
- // fs.writeFile(dirfile_2, data, 'utf8', function (err) {
-   //  if (err) return console.log(err);
- // });
-});
+//  // fs.writeFile(dirfile_2, data, 'utf8', function (err) {
+//    //  if (err) return console.log(err);
+//  // });
+// });
