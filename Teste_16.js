@@ -5,10 +5,10 @@ const dirfile_2 = 'BIG_DATA_2.csv'
 //const reg = /(\<td .*)/g  // essa NÂO serviu proque tem algumas linhas dentro do <td> que estão mal formatadas no original
 
 const reg_3 = /\r\n|\n/ // ------>>>>> essa REGEX casa bem com windows ou linux ou mac ....
-                        // ------>>>>> essa REGEX .*(?:(?=\,)) acho que vou ter que casar isso para mais um ajuste no arquivo 
-                        // ------>>>>> ela casa tudo que estiver antes de uma virgula
-                        // ------>>>>> vou ter que voltar no Teste_12.js e fazer mais essa alteração para ajustar o arquivo BIG_DATA.csv
-                        // ------>>>>> pois o numero de linhas total do arquivo não esta batendo, para simplesmente fazer o laço for e salvar em DataBase
+// ------>>>>> essa REGEX .*(?:(?=\,)) acho que vou ter que casar isso para mais um ajuste no arquivo 
+// ------>>>>> ela casa tudo que estiver antes de uma virgula
+// ------>>>>> vou ter que voltar no Teste_12.js e fazer mais essa alteração para ajustar o arquivo BIG_DATA.csv
+// ------>>>>> pois o numero de linhas total do arquivo não esta batendo, para simplesmente fazer o laço for e salvar em DataBase
 const fs = require('fs')
 //const replace = require('replace-in-file');
 const regex1 = "  "
@@ -25,23 +25,49 @@ fs.readFile(dirfile_2, 'utf8', function (err, data) {
   }
   let result = data.split(reg_3);
 
-  // for (let i = 0; i <= 14; i++) {
-  //   console.log(result.unshift(i))
+  for (let i = 0; i < result.length; i++) {
+    let indice = i
+    console.log(result[indice])
+    if (indice > 16) {
+      i = indice + 14
+    }
+  }
+})  
+
+  // result.forEach(function (nome, indice) {
+  //   //indice = 0
+  //   let i = indice
+  //   indice = 0
+  //   if (i <= 16) {
+  //     console.log(result[i])
+      
+  //   } else if (i > 16) {
+  //     i = indice + 14
+  //     //result.unshift(i)
+  //     //indice=0
+  //   }
+    //for (let i=indice;i<=16;i++)
 
 
-  // }
-  //const i = 0
-  for (let i=0;i<=16;i++){
-  console.log(result[i]) // ------->>>>>FUNCIONA LÊ O PRIMEIRO INDICE DO ARRAY (RETORNA 1, NO CASO)
-     if (i>16){
-       result.unshift(i)
-       i=0
-     }
-  }    
+
+
+
+    //console.log(`${indice +1}) ${nome}`)
+    //console.log(typeof(indice))
+
+  // })
+
+  // for (let i=0;i<=16;i++){
+  // console.log(result[i]) // ------->>>>>FUNCIONA LÊ O PRIMEIRO INDICE DO ARRAY (RETORNA 1, NO CASO)
+  //    if (i>16){
+  //      result.unshift(i)
+  //      i=0
+  //    }
+  // }    
   //console.log(typeof(result)) // ----->>>>>RETORNA UM OBJECT
 
   //console.log(result) // ------>>>>>> FUNCIONA  LÊ TUDO COMO UM UNICO ARRAY
-  
+
   // if (result === "+") {S
   //   for (let i = 0; result.length(i) <= 14; i++) {
   //     result.unshift(i)
@@ -61,9 +87,6 @@ fs.readFile(dirfile_2, 'utf8', function (err, data) {
 
 
   //   }
-  
-})
-
 
 // handleFiles(input) ;{
 
@@ -141,4 +164,4 @@ fs.readFile(dirfile_2, 'utf8', function (err, data) {
 //  // fs.writeFile(dirfile_2, data, 'utf8', function (err) {
 //    //  if (err) return console.log(err);
 //  // });
-// });
+// })
